@@ -6,6 +6,7 @@ import Tombol_1, {
 } from "@/components/button";
 
 import Gallery from "@/components/gallery";
+import Form, { Form_2 } from "@/components/form";
 
 export default function Home() {
   return (
@@ -41,6 +42,13 @@ export default function Home() {
       <hr className="my-4" />
 
       <Gallery />
+      <hr className="my-4" />
+
+<Form />
+
+      <hr className="my-4" />
+
+<Form_2 />
     </main>
   );
 }
