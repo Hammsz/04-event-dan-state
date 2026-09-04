@@ -5,8 +5,10 @@ import Tombol_1, {
   Tombol_3,
 } from "@/components/button";
 
+import Messenger from "@/components/chat";
 import Gallery from "@/components/gallery";
 import Form, { Form_2 } from "@/components/form";
+import Accordion from "@/components/accordion";
 
 export default function Home() {
   return (
@@ -49,6 +51,15 @@ export default function Home() {
       <hr className="my-4" />
 
 <Form_2 />
+
+      <hr className="my-4" />
+
+      <Accordion />
+      
+      <hr className="my-4" />
+
+      <Messenger />
+
     </main>
   );
 }
