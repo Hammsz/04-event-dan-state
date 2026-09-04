@@ -34,3 +34,23 @@ export function Tombol_2({
     </button>
   );
 }
+
+export function Tombol_3({
+  isiPesan,
+  namaTombol,
+}: {
+  isiPesan: string;
+  namaTombol: string;
+}) {
+  return (
+    <button
+      className="bg-green-500 hover:bg-green-700 text-white p-2 rounded m-2"
+      onClick={(e) => {
+        e.stopPropagation();
+        alert(isiPesan);
+      }}
+    >
+      {namaTombol}
+    </button>
+  );
+}
